@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GARAGE 21</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+ 
 
 
     <!-- font awesome cdn link  -->
@@ -28,8 +28,8 @@
     <label for="menu-bar" class="fas fa-bars"></label>
 
     <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">Sobre</a>
+        <a href="index.html">Home</a>
+        <a href="#features">Ficha Técnica</a>
         <a href="#profissionais">Sorteios</a>
         <a href="#endereco">FAQ</a>
 
@@ -41,22 +41,200 @@
 
 <!-- header section ends -->
 <div class="home">
-    <div class="swiper-container image-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/2.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/3.jpeg" alt=""></div>
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/4.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/5.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/6.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/7.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/7.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/8.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/9.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/10.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="imgs/imgSaveiro/11.jpg" alt=""></div>
-           
+    <!-- Container for the image gallery -->
+    <style>
+        body {
+          font-family: Arial;
+          margin: 0;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        img {
+          vertical-align: middle;
+         
+        }
+        
+        
+        
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+          position: relative;
+          margin: 2rem 2rem;
+         
+        }
+        
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+          
+        }
+        
+        
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+        
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Six columns side by side */
+        .column {
+          float: left;
+          width: 16.66%;
+        }
+        
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+        </style>
+          
+        <body>
+        
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="imgs/imgSaveiro/2.jpeg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="imgs/imgSaveiro/3.jpeg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="imgs/imgSaveiro/4.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="imgs/imgSaveiro/5.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="imgs/imgSaveiro/6.jpg" style="width:100%">
+          </div>
+        
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="imgs/imgSaveiro/2.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="imgs/imgSaveiro/3.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="imgs/imgSaveiro/4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="imgs/imgSaveiro/5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="imgs/imgSaveiro/6.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="imgs/imgSaveiro/8.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            </div>
+          </div>
         </div>
-    </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+            
+        </body>
 </div>
 
 
@@ -64,45 +242,20 @@
 
     <div class="content-video">
        
-        <iframe width="960" height="625" src="imgs/videoGarota.mp4" ></iframe>
+        <iframe width="960" height="625" autoplay="false" src="imgs/videoGarota.mp4" ></iframe>
        
     </div>
-    <section class="features" id="especialidades">
+    <div class="features" id="features">
 
-        <h1 class="heading"> SAVEIRO CROSS</h1>
+        <h1 class="heading"> FICHA TÉCNICA</h1>
+        <p>Esses são os dados técnicos do Volkswagen Saveiro 1.6 2011,
+          conforme informações do fabricante.</p>
+          <button >  <a  href="ficha técnica.pdf" download>BAIXAR FICHA TÉCNICA  </a></button>
+        
+       
+      
 
-        <div class="box-container">
-
-            <div class="box">
-                <img src="imgs/trevoBG.png" alt="Casal Sentado Conversando">
-                <h3> PASSO 1º </h3>
-                <h4>ESCOLHA O SORTEIO EM ANDAMENTO</h4>
-                <P>Então siga para o passo 2º .</P>
-                <a href="#profissionais" class="btn">VER SORTEIOS</a>
-
-
-            </div>
-
-            <div class="box">
-                <img src="imgs/pagamentoBG.png" alt="Imagem de Acupuntura">
-                <h3>PASSO 2º </h3>
-                <h4>ESCOLHA A FORMA DE PAGAMENTO QUE DESEJA </h4>
-                <P>Pague Então siga para o ultimo passo 3º .</P>
-                <a href="https://api.whatsapp.com/send/?phone=5581973037762&text&app_absent=0" class="btn">FORMAS DE
-                    PAGAMENTO</a>
-
-            </div>
-
-            <div class="box">
-                <img src="imgs/federal.jpg" alt="Mulher Olhando para o Celular">
-                <h3>PASSO 3º </h3>
-                <h4>VERIFIQUE OS SEUS NUMEROS PARA CONCORRER </h4>
-                <p>AGORA SÓ ESPERAR O DIA DO SORTEIO \O/ </p>
-                <a href="https://mpago.la/1PpPT71" class="btn">COMPRAR MEU BILHETE</a>
-            </div>
-        </div>
-
-    </section>
+    </div>
 
     
 
@@ -174,30 +327,7 @@
     <!-- footer section ends -->
     
    
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script>
     
-    var swiper = new Swiper(".image-slider", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 2,
-            slideShadows: true,
-        },
-        loop:true,
-        autoplay: {
-              delay: 2000,
-              disableOnInteraction: false,
-        },
-    });    
-    
-    </script>
     
 
 </body>
