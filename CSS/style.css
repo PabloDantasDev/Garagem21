@@ -124,11 +124,16 @@ header label{
     opacity: 0;
 }
 .home{
-   padding: 10rem 0;
+   padding: 9rem 0;
    background: linear-gradient(90deg, black, red, black)
 }
 
 
+.box1{
+    display: none;
+    background: linear-gradient(90deg, black, red, black)
+
+}
 
 
 
@@ -387,6 +392,17 @@ transition: 0.1s;
        margin-top: 20px;
        cursor: pointer;
        transition:  ease-in-out 0.2s;
+    }
+    .box{
+        display: none;
+    }
+
+    .box1{
+        display: block;
+        margin-top: -8rem;
+    }
+    .box1 img{
+        margin-bottom: 0.3rem;
     }
     .about .column .image img{
         width: 100%;
