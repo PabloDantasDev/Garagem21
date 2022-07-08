@@ -24,6 +24,9 @@
 }
 
 
+
+
+
 *::selection{
     background: var(--pink);
     color: white;
@@ -139,7 +142,9 @@ header label{
    
 }
 
-
+.about{
+    margin-bottom: 3rem;
+}
 
 
  .about .heading span{
@@ -156,12 +161,13 @@ header label{
 }
 
 .about .column .image{
-   flex:1 2 30rem;
+   flex:1 4 30rem;
 }
 
 
 .about .column .image img{
-    width: 50%;
+    width: 100%;
+    height: 800px;
 
     margin-top: 2rem;
     
@@ -209,147 +215,6 @@ header label{
 
 
 
-.features .box-container{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    cursor: pointer;
-    
-    
-}
-
-.Subtitle{
-text-align: center;
-font-size: 1.4rem;
-color: #333;
-    
-    
-}
-
-
-
-.features .box-container .box{
-  
-flex: 1 1 30rem;
-background: white;
-border-radius: .5rem;
-border: .1rem solid rgba(0, 0, 0, 0.1);
-box-shadow: 0.1 .5rem 1rem rgba(0, 0, 0, 0.527);
-margin: 1.5rem;
-padding: 4rem 2rem;
-text-align: center;
-transition: 0.1s;
-
-
-}
-
-.features .box-container .box img{
-    height: 20rem;
-   
-}
-
-.features .box-container .box h3{
-    font-size: 2rem;
-    color: #333;
-    padding-top: 1rem;
-}
-
-.features .box-container .box p{
-    font-size: 1.4rem;
-    color: #666;
-    padding-top: 1rem;
-    text-align: center;
-}
-
-.content-video{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  black;
-}
-
-
-
-.profissionais{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-}
-
-
-
-.profissionais .box-container{
-    border: 1px solid rgba(8, 8, 8, 0.068);
-    padding: 3rem;
-    margin-bottom: 50rem;
-    box-shadow: 0 .5rem 1rem  rgba(0, 0, 0,.5);
-    border-radius: .8rem;
-}
-
-
-
-
-.profissionais .box-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-     align-items: center;
-     margin-bottom: 2rem;
-}
-
-.profissionais .box-container img {
-    width: 40rem;
-    height: 40rem;
-    
-}
-
-.profissionais .box-container h1 {
-    color: rgb(189,30,30);
-    font-size: 5.9rem;
-    
-}
-
-.profissionais .box-container h3 {
-    color: rgb(189,30,30);
-    font-size: 2.9rem;
-    
-}
-.profissionais .box-container h4 {
-    color: #0ccc26;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-.profissionais .box-container  {
-   
-    font-size: 1.3rem;
-}
-.profissionais .box-container .box-content span{
-    color:rgb(189,30,30);
-    font-size: 20px;
-}
-.profissionais .box-container p {
-    color: #101110;
-    font-size: 1.7rem;
-}
-
-.enderecos{
-   border: .1rem solid rgba(0, 0, 0, 0.041);
-}
-.map{
-   display: block;
-   text-align: center;
-
-}
-
- h3{
-   text-align: center;
-    font-size: 2rem;
-    color: #666;
-}
 
 
 
