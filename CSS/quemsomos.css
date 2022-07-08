@@ -5,6 +5,11 @@
     .home img{
     height: 39vh;
     }
+
+
+    .about .image img{
+        height: 29vh;
+    }
     
     }
 
@@ -13,6 +18,10 @@
 
     .home img{
     height: 49vh;
+    }
+
+    .about .column .image img{
+        height: 400px;
     }
     
     }
@@ -23,6 +32,10 @@
 
 .home img{
 height: 69vh;
+}
+
+.about img{
+    height: 69vh;
 }
 
 }
