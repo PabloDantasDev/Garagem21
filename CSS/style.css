@@ -398,7 +398,7 @@ transition: 0.1s;
        transition:  ease-in-out 0.2s;
     }
     .box{
-        display: block;
+        display: none;
 
     }
 
