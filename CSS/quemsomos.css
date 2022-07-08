@@ -1,0 +1,28 @@
+
+@media (max-width:340px) {
+
+
+    .home img{
+    height: 39vh;
+    }
+    
+    }
+
+@media (max-width:456px) {
+
+
+    .home img{
+    height: 49vh;
+    }
+    
+    }
+
+
+@media (max-width:768px) {
+
+
+.home img{
+height: 69vh;
+}
+
+}
