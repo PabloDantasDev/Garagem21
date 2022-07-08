@@ -397,6 +397,10 @@ transition: 0.1s;
        cursor: pointer;
        transition:  ease-in-out 0.2s;
     }
+
+    .footer .box{
+        display: block;
+    }
     .box{
         display: none;
 
