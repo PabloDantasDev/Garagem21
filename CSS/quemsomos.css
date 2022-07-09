@@ -2,8 +2,8 @@
 @media (max-width:340px) {
 
 
-    .home img{
-    height: 39vh;
+    .home .carousel-example img{
+      height:10px;
     }
 
 
