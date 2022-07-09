@@ -1,27 +1,26 @@
 
-@media (max-width:340px) {
+@media (max-width:385px) {
 
+.home .carousel .carousel-inner .carousel-item img{
+    height: 40vh;
+}
+@media (max-width:414px) {
 
-    .home .carousel-example img{
-      height:10px;
-    }
-
-
-    .about .image img{
-        height: 29vh;
+    .home .carousel .carousel-inner .carousel-item img{
+        height: 40vh;
     }
     
-    }
+}
 
-@media (max-width:456px) {
+@media (width:456px) {
 
 
-    .home img{
-    height: 49vh;
+    .home {
+    height: 10vh;
     }
 
     .about .column .image img{
-        height: 400px;
+        height: 200px;
     }
     
     }
