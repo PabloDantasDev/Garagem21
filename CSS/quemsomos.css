@@ -4,10 +4,30 @@
 .home .carousel .carousel-inner .carousel-item img{
     height: 40vh;
 }
-@media (max-width:414px) {
+
+.about .column .image img{
+    height: 420px;
+}
+
+@media (max-width:424px) {
 
     .home .carousel .carousel-inner .carousel-item img{
         height: 40vh;
+    }
+    
+    .about .column .image img{
+        height: 420px;
+    }
+    
+}
+@media (max-width:403px) {
+
+    .home .carousel .carousel-inner .carousel-item img{
+        height: 40vh;
+    }
+    
+    .about .column .image img{
+        height: 420px;
     }
     
 }
@@ -20,10 +40,22 @@
     }
 
     .about .column .image img{
-        height: 200px;
+        height: 420px;
     }
     
     }
+    @media (width:483px) {
+
+
+        .home {
+        height: 10vh;
+        }
+    
+        .about .column .image img{
+            height: 200px;
+        }
+        
+        }
 
 
 @media (max-width:768px) {
@@ -37,4 +69,4 @@ height: 69vh;
     height: 69vh;
 }
 
-}
+}}
