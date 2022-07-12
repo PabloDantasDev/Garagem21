@@ -17,13 +17,13 @@
 }
 .home .container-regulamento p{
    margin: 1rem 5rem;
-   font-size: 17px;
-   font-family: 'Courier New', Courier, monospace;
+   font-size: 12px;
+   
 }
 .home .container-regulamento .buttons a{
     padding: 0.5rem 5rem;
     font-size: 17px;
-    font-family: 'Courier New', Courier, monospace;
+   
  }
 .home
 a img{
